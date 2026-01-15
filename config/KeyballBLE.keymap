@@ -28,7 +28,6 @@
 #define JP_KANA         LANGUAGE_1        // かな
 #define JP_EISU         LANGUAGE_2        // 英数
 #define JP_HANZEN       GRAVE             // 半角/全角
-
 #define ZMK_MOUSE_DEFAULT_SCRL_VAL 25
 #define MOUSE 4
 #define SCROLL 5
@@ -60,45 +59,70 @@
         excel_sum: excel_sum {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&macro_press &kp LALT &kp LSHIFT>
-                     , <&macro_tap &kp MINUS>
-                     , <&macro_release &kp LALT &kp LSHIFT>;
+            bindings =
+                <&macro_press>,
+                <&kp LALT &kp LSHIFT>,
+                <&macro_tap>,
+                <&kp MINUS>,
+                <&macro_release>,
+                <&kp LALT &kp LSHIFT>;
+
             label = "EXCEL_SUM";
         };
 
         excel_yen: excel_yen {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&macro_press &kp LCTRL &kp LSHIFT>
-                     , <&macro_tap &kp NUMBER_4>
-                     , <&macro_release &kp LCTRL &kp LSHIFT>;
+            bindings =
+                <&macro_press>,
+                <&kp LCTRL &kp LSHIFT>,
+                <&macro_tap>,
+                <&kp NUMBER_4>,
+                <&macro_release>,
+                <&kp LCTRL &kp LSHIFT>;
+
             label = "EXCEL_YEN";
         };
 
         excel_percent: excel_percent {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&macro_press &kp LCTRL &kp LSHIFT>
-                     , <&macro_tap &kp NUMBER_5>
-                     , <&macro_release &kp LCTRL &kp LSHIFT>;
+            bindings =
+                <&macro_press>,
+                <&kp LCTRL &kp LSHIFT>,
+                <&macro_tap>,
+                <&kp NUMBER_5>,
+                <&macro_release>,
+                <&kp LCTRL &kp LSHIFT>;
+
             label = "EXCEL_PERCENT";
         };
 
         excel_date: excel_date {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&macro_press &kp LCTRL &kp LSHIFT>
-                     , <&macro_tap &kp NUMBER_3>
-                     , <&macro_release &kp LCTRL &kp LSHIFT>;
+            bindings =
+                <&macro_press>,
+                <&kp LCTRL &kp LSHIFT>,
+                <&macro_tap>,
+                <&kp NUMBER_3>,
+                <&macro_release>,
+                <&kp LCTRL &kp LSHIFT>;
+
             label = "EXCEL_DATE";
         };
 
         excel_decimal: excel_decimal {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&macro_press &kp LCTRL &kp LSHIFT>
-                     , <&macro_tap &kp NUMBER_1>
-                     , <&macro_release &kp LCTRL &kp LSHIFT>;
+            bindings =
+                <&macro_press>,
+                <&kp LCTRL &kp LSHIFT>,
+                <&macro_tap>,
+                <&kp NUMBER_1>,
+                <&macro_release>,
+                <&kp LCTRL &kp LSHIFT>;
+
             label = "EXCEL_DECIMAL";
         };
     };
@@ -128,10 +152,10 @@
 
         default_layer {
             bindings = <
-&kp Q             &kp W         &kp E         &kp R                        &kp T                                                          &kp Y             &kp U  &kp I      &kp O       &kp P
-&kp A             &lt 4 S       &kp D         &kp F                        &kp G        &mkp MB1                           &kp JP_AT      &kp H             &kp J  &kp K      &lt 4 L     &kp MINUS
-&mt LEFT_SHIFT Z  &kp X         &kp C         &kp V                        &kp B        &mkp MB2                           &kp JP_COLON   &kp N             &kp M  &kp COMMA  &kp PERIOD  &kp JP_PLUS
-&kp LCTRL         &kp LEFT_WIN  &kp LEFT_ALT  &lt_to_layer_0 6 INT_HENKAN  &lt 2 SPACE  &lt_to_layer_0 3 INT_MUHENKAN      &kp BACKSPACE  &lt 1 ENTER                                  &kp DEL
+&kp Q             &kp W         &kp E         &kp R                        &kp T                                                          &kp Y        &kp U  &kp I      &kp O       &kp P
+&kp A             &lt 4 S       &kp D         &kp F                        &kp G        &mkp MB1                           &kp TAB        &kp H        &kp J  &kp K      &lt 4 L     &kp MINUS
+&mt LEFT_SHIFT Z  &kp X         &kp C         &kp V                        &kp B        &mkp MB2                           &kp APOS       &kp N        &kp M  &kp COMMA  &kp PERIOD  &mt RIGHT_SHIFT SLASH
+&kp LCTRL         &kp LEFT_WIN  &kp LEFT_ALT  &lt_to_layer_0 6 INT_HENKAN  &lt 2 SPACE  &lt_to_layer_0 3 INT_MUHENKAN      &kp BACKSPACE  &lt 1 ENTER                                &kp DEL
             >;
 
             sensor-bindings = <&rotate>;
@@ -148,19 +172,19 @@
 
         NUM {
             bindings = <
-&kp MINUS                   &kp KP_NUMBER_7  &kp KP_NUMBER_8  &kp KP_NUMBER_9  &kp JP_PLUS                                                      &kp JP_CARET      &kp JP_AMPERSAND   &kp JP_TILDE    &kp JP_LPAREN     &kp JP_RPAREN
-&kp SLASH                   &kp KP_NUMBER_4  &kp KP_NUMBER_5  &kp KP_NUMBER_6  &kp JP_ASTERISK  &kp LC(LA(KP_NUMBER_0))      &kp JP_UNDERSCORE  &kp EXCLAMATION   &kp JP_AT          &kp HASH        &kp DOLLAR        &kp PERCENT
-&mt LEFT_SHIFT KP_NUMBER_0  &kp KP_NUMBER_1  &kp KP_NUMBER_2  &kp KP_NUMBER_3  &kp PERIOD       &kp JP_EQUAL                 &trans             &kp JP_LBRACKET   &kp JP_RBRACKET    &kp JP_LBRACE   &kp JP_RBRACE     &kp JP_YEN
-&trans                      &trans           &trans           &trans           &trans           &trans                       &trans             &trans                                                                  &kp JP_PIPE
+&kp MINUS                   &kp KP_NUMBER_7  &kp KP_NUMBER_8  &kp KP_NUMBER_9  &kp JP_PLUS                                                      &kp JP_CARET     &kp JP_AMPERSAND  &kp JP_TILDE   &kp JP_LPAREN  &kp JP_RPAREN
+&kp SLASH                   &kp KP_NUMBER_4  &kp KP_NUMBER_5  &kp KP_NUMBER_6  &kp JP_ASTERISK  &kp LC(LA(KP_NUMBER_0))      &kp JP_UNDERSCORE  &kp EXCLAMATION  &kp JP_AT         &kp HASH       &kp DOLLAR     &kp PERCENT
+&mt LEFT_SHIFT KP_NUMBER_0  &kp KP_NUMBER_1  &kp KP_NUMBER_2  &kp KP_NUMBER_3  &kp PERIOD       &kp JP_EQUAL                 &trans             &kp JP_LBRACKET  &kp JP_RBRACKET   &kp JP_LBRACE  &kp JP_RBRACE  &kp JP_YEN
+&trans                      &trans           &trans           &trans           &trans           &trans                       &trans             &trans                                                           &kp JP_PIPE
             >;
         };
 
         ARROW {
             bindings = <
-&kp ESCAPE      &kp LC(LS(TAB))         &kp UP_ARROW    &kp LC(TAB)              &trans                       &excel_sum      &excel_yen       &excel_percent  &excel_date  &excel_decimal
-&kp HOME        &kp LEFT_ARROW          &kp DOWN_ARROW  &kp RIGHT_ARROW          &kp END  &trans      &trans  &kp LC(A)       &kp LC(F)        &trans          &trans       &trans
-&kp LEFT_SHIFT  &kp LG(LS(LEFT_ARROW))  &trans          &kp LG(LS(RIGHT_ARROW))  &trans   &trans      &trans  &kp LC(Z)       &kp LC(V)        &kp LC(C)       &kp LC(S)    &trans
-&trans          &trans                  &trans          &trans                   &trans   &trans      &trans  &trans                                                        &trans
+&kp ESCAPE      &kp LC(LS(TAB))         &kp UP_ARROW    &kp LC(TAB)              &trans                       &excel_sum  &excel_yen  &excel_percent  &excel_date  &excel_decimal
+&kp HOME        &kp LEFT_ARROW          &kp DOWN_ARROW  &kp RIGHT_ARROW          &kp END  &trans      &trans  &kp LC(A)   &kp LC(F)   &trans          &trans       &trans
+&kp LEFT_SHIFT  &kp LG(LS(LEFT_ARROW))  &trans          &kp LG(LS(RIGHT_ARROW))  &trans   &trans      &trans  &kp LC(Z)   &kp LC(V)   &kp LC(C)       &kp LC(S)    &trans
+&trans          &trans                  &trans          &trans                   &trans   &trans      &trans  &trans                                               &trans
             >;
 
             sensor-bindings = <&inc_dec_kp LC(PAGE_UP) LC(PAGE_DOWN)>;
