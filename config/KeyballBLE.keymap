@@ -200,7 +200,7 @@
 &trans       &trans  &trans           &trans             &trans     &trans        &kp PAGE_UP    &kp PAGE_DOWN                                              &trans
             >;
 
-            sensor-bindings = <&inc_dec_kp 0 0>;
+            sensor-bindings = <&ROTATE SCRL_UP SCRL_DOWN>;
         };
 
         SCROLL {
