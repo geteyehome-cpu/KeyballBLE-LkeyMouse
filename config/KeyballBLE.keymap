@@ -182,10 +182,10 @@
 
         ARROW {
             bindings = <
-&kp ESCAPE      &kp LC(LS(TAB))         &kp UP_ARROW    &kp LC(TAB)              &kp LC(W)                             &kp LC(A)  &kp LC(F)  &trans     &trans          &excel_sum
-&kp HOME        &kp LEFT_ARROW          &kp DOWN_ARROW  &kp RIGHT_ARROW          &kp END        &trans      &kp LC(Z)  &kp LC(V)  &kp LC(C)  &kp LC(S)  &excel_decimal  &excel_yen
-&kp LEFT_SHIFT  &kp LG(LS(LEFT_ARROW))  &trans          &kp LG(LS(RIGHT_ARROW))  &kp LS(LC(T))  &trans      &kp LC(Y)  &trans     &kp LC(X)  &trans     &trans          &excel_date
-&trans          &trans                  &trans          &trans                   &trans         &trans      &trans     &trans                                           &excel_percent
+&kp ESCAPE      &kp LC(LS(TAB))         &kp UP_ARROW    &kp LC(TAB)              &kp LC(W)                                &kp LC(A)  &kp LC(F)  &trans     &trans          &excel_sum
+&kp HOME        &kp LEFT_ARROW          &kp DOWN_ARROW  &kp RIGHT_ARROW          &kp END        &trans         &kp LC(Z)  &kp LC(V)  &kp LC(C)  &kp LC(S)  &excel_decimal  &excel_yen
+&kp LEFT_SHIFT  &kp LG(LS(LEFT_ARROW))  &trans          &kp LG(LS(RIGHT_ARROW))  &kp LS(LC(T))  &kp LG(R)      &kp LC(Y)  &trans     &kp LC(X)  &trans     &trans          &excel_date
+&trans          &trans                  &trans          &trans                   &trans         &trans         &trans     &trans                                           &excel_percent
             >;
 
             sensor-bindings = <&inc_dec_kp LC(PAGE_UP) LC(PAGE_DOWN)>;
