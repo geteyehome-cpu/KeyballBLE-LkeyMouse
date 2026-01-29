@@ -166,7 +166,7 @@
             bindings = <
 &kp LG(L)  &trans  &trans  &kp LG(R)      &kp LG(E)                           &kp F1  &kp F2  &kp F3  &kp F4  &kp F5
 &trans     &trans  &trans  &kp LA(ENTER)  &trans     &trans          &kp F13  &kp F6  &kp F7  &kp F8  &kp F9  &kp F10
-&trans     &trans  &trans  &trans         &trans     &kp LG(F4)      &trans   &trans  &trans  &trans  &trans  &kp F11
+&trans     &trans  &trans  &trans         &trans     &kp LA(F4)      &trans   &trans  &trans  &trans  &trans  &kp F11
 &trans     &trans  &trans  &trans         &trans     &trans          &trans   &trans                          &kp F12
             >;
         };
