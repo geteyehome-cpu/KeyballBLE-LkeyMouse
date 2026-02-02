@@ -167,7 +167,7 @@
 &kp LG(L)      &kp LG(M)           &kp LG(UP_ARROW)  &kp LG(R)            &kp LG(E)                               &kp F1  &kp F2  &kp F3  &kp F4  &kp F5
 &kp LG(LS(S))  &kp LG(LEFT_ARROW)  &kp LG(DOWN)      &kp LG(RIGHT_ARROW)  &kp LA(ENTER)  &trans          &kp F13  &kp F6  &kp F7  &kp F8  &kp F9  &kp F10
 &kp LG(X)      &kp LG(LS(M))       &kp LG(V)         &kp LG(A)            &kp LG(N)      &kp LA(F4)      &trans   &trans  &trans  &trans  &trans  &kp F11
-&trans         &trans              &trans            &trans               &trans         &trans          &trans   &trans                          &kp F12
+&trans         &trans              &trans            &trans               &trans         &kp LC(I)       &trans   &trans                          &kp F12
             >;
         };
 
@@ -186,7 +186,7 @@
             bindings = <
 &kp ESCAPE  &kp LC(PAGE_UP)         &kp UP_ARROW    &kp LC(PAGE_DOWN)        &kp LC(W)                                   &kp LC(A)      &kp LC(F)  &trans     &trans          &excel_sum
 &kp HOME    &kp LEFT_ARROW          &kp DOWN_ARROW  &kp RIGHT_ARROW          &kp END        &trans      &kp LC(Z)        &kp LC(V)      &kp LC(C)  &kp LC(S)  &excel_decimal  &excel_yen
-&kp LC(T)   &kp LG(LS(LEFT_ARROW))  &kp LC(I)       &kp LG(LS(RIGHT_ARROW))  &kp LS(LC(T))  &trans      &kp LC(Y)        &kp LC(LS(V))  &kp LC(X)  &trans     &trans          &excel_date
+&kp LC(T)   &kp LG(LS(LEFT_ARROW))  &kp LC(TAB)     &kp LG(LS(RIGHT_ARROW))  &kp LS(LC(T))  &trans      &kp LC(Y)        &kp LC(LS(V))  &kp LC(X)  &trans     &trans          &excel_date
 &trans      &trans                  &trans          &trans                   &trans         &trans      &kp RIGHT_SHIFT  &trans                                               &excel_percent
             >;
 
