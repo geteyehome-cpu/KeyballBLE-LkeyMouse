@@ -184,9 +184,9 @@
 
         ARROW {
             bindings = <
-&kp ESCAPE  &kp LC(PAGE_UP)         &kp UP_ARROW    &kp LC(PAGE_DOWN)        &kp LC(W)                                   &kp LC(A)      &kp LC(F)  &trans     &trans          &excel_sum
+&kp ESCAPE  &kp LC(PAGE_UP)         &kp UP_ARROW    &kp LC(PAGE_DOWN)        &kp LC(W)                                   &kp LC(A)      &kp LC(F)  &kp LC(L)  &trans          &excel_sum
 &kp HOME    &kp LEFT_ARROW          &kp DOWN_ARROW  &kp RIGHT_ARROW          &kp END        &trans      &kp LC(Z)        &kp LC(V)      &kp LC(C)  &kp LC(S)  &excel_decimal  &excel_yen
-&kp LC(T)   &kp LG(LS(LEFT_ARROW))  &kp LC(TAB)     &kp LG(LS(RIGHT_ARROW))  &kp LS(LC(T))  &trans      &kp LC(Y)        &kp LC(LS(V))  &kp LC(X)  &trans     &trans          &excel_date
+&kp LC(T)   &kp LG(LS(LEFT_ARROW))  &kp LC(TAB)     &kp LG(LS(RIGHT_ARROW))  &kp LS(LC(T))  &trans      &kp LC(Y)        &kp LC(LS(V))  &kp LC(X)  &kp LC(K)  &trans          &excel_date
 &trans      &trans                  &trans          &trans                   &trans         &trans      &kp RIGHT_SHIFT  &trans                                               &excel_percent
             >;
 
