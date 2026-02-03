@@ -144,10 +144,10 @@
 
         NUM {
             bindings = <
-&kp MINUS     &kp N7        &kp N8        &kp N9        &kp JP_PLUS                                         &kp JP_CARET     &kp JP_AMPERSAND  &kp JP_TILDE   &kp JP_LPAREN  &kp JP_RPAREN
-&kp SLASH     &kp NUMBER_4  &kp N5        &kp NUMBER_6  &kp JP_ASTERISK  &kp C_MUTE      &kp JP_UNDERSCORE  &kp EXCLAMATION  &kp JP_AT         &kp HASH       &kp DOLLAR     &kp PERCENT
-&kp NUMBER_0  &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp PERIOD       &kp UNDER       &kp LEFT_BRACE     &kp JP_LBRACKET  &kp JP_RBRACKET   &kp JP_LBRACE  &kp JP_RBRACE  &kp JP_YEN
-&trans        &trans        &trans        &trans        &trans           &trans          &trans             &trans                                                           &kp JP_PIPE
+&kp MINUS     &kp N7        &kp N8        &kp N9        &kp PLUS                                      &kp CARET         &kp AMPERSAND      &kp TILDE       &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS
+&kp SLASH     &kp NUMBER_4  &kp N5        &kp NUMBER_6  &kp ASTERISK  &kp C_MUTE      &kp UNDERSCORE  &kp EXCLAMATION   &kp AT_SIGN        &kp HASH        &kp DOLLAR            &kp PERCENT
+&kp NUMBER_0  &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp PERIOD    &kp UNDER       &kp SQT         &kp LEFT_BRACKET  &kp RIGHT_BRACKET  &kp LEFT_BRACE  &kp RIGHT_BRACE       &kp NON_US_BACKSLASH
+&trans        &trans        &trans        &trans        &trans        &trans          &trans          &trans                                                                     &kp PIPE
             >;
 
             sensor-bindings = <&inc_dec_kp C_VOLUME_UP C_VOL_DN>;
