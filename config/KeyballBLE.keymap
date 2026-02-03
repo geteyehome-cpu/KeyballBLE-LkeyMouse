@@ -11,14 +11,16 @@
 };
 
 / {
-    combos {
-        compatible = "zmk,combos";
+/*
+combos {
+    compatible = "zmk,combos";
 
-        double_quotation {
-            bindings = <&kp JP_DQUOTE>;
-            key-positions = <20 21>;
-        };
+    double_quotation {
+        bindings = <&kp JP_DQUOTE>;
+        key-positions = <20 21>;
     };
+};
+*/
 
     macros {
         to_layer_0: to_layer_0 {
