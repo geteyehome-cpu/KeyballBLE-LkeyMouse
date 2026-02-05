@@ -197,10 +197,10 @@ combos {
 
         layer_7 {
             bindings = <
-&trans                     &trans  &kp LC(PAGE_DOWN)  &kp LC(PAGE_UP)  &trans                             &kp LC(W)      &kp LC(PAGE_UP)  &kp LC(PAGE_DOWN)  &trans  &trans
-&lt_to_layer_0 5 KP_MINUS  &trans  &mkp MB1           &mkp MB2         &mkp MB3  &trans      &trans       &mkp MB3       &mkp MB1         &mkp MB2           &trans  &lt_to_layer_0 5 KP_MINUS
-&trans                     &trans  &mkp MB4           &mkp MB5         &mkp MB5  &trans      &kp LC(T)    &kp LS(LC(T))  &mkp MB4         &mkp MB5           &trans  &trans
-&trans                     &trans  &trans             &trans           &trans    &trans      &kp PAGE_UP  &kp PAGE_DOWN                                              &trans
+&trans                     &trans  &kp LC(PAGE_DOWN)  &kp LC(PAGE_UP)  &trans                             &kp LC(W)      &kp LC(PAGE_UP)  &kp LC(PAGE_DOWN)  &kp RC(T)  &trans
+&lt_to_layer_0 5 KP_MINUS  &trans  &mkp MB1           &mkp MB2         &mkp MB3  &trans      &trans       &mkp MB3       &mkp MB1         &mkp MB2           &trans     &lt_to_layer_0 5 KP_MINUS
+&trans                     &trans  &mkp MB4           &mkp MB5         &mkp MB5  &trans      &trans       &kp LS(LC(T))  &mkp MB4         &mkp MB5           &trans     &trans
+&trans                     &trans  &trans             &trans           &trans    &trans      &kp PAGE_UP  &kp PAGE_DOWN                                                 &trans
             >;
         };
     };
